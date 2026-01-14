@@ -53,21 +53,22 @@
         border: 2px solid rgba(255, 255, 255, 0.5);
       }
     </style>
-  <script type="importmap">
+    <script type="importmap">
 {
   "imports": {
-    "react-dom": "https://esm.sh/react-dom@19.0.0",
-    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
     "react": "https://esm.sh/react@19.0.0",
-    "react/": "https://esm.sh/react@19.0.0/",
-    "@google/genai": "https://esm.sh/@google/genai@1.3.0"
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "@google/genai": "https://esm.sh/@google/genai@1.3.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
   }
 }
 </script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
-    <!-- استخدام المسار المباشر لضمان عمله في بيئة الـ Build -->
+    <!-- تأكد من أن هذا الملف موجود في نفس المجلد الرئيسي -->
     <script type="module" src="index.tsx"></script>
   </body>
 </html>
