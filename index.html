@@ -29,23 +29,8 @@
         border-right: 1px solid rgba(255,255,255,0.1);
         overflow: hidden;
       }
-      .bg-layer {
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-      }
-      .bg-vignette {
-        background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.3) 100%);
-        z-index: 5;
-      }
       .no-scrollbar::-webkit-scrollbar { display: none; }
       .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-      @keyframes soft-float {
-        0%, 100% { transform: translateY(0) rotate(0deg); }
-        50% { transform: translateY(-15px) rotate(2deg); }
-      }
-      .animate-soft-float { animation: soft-float 5s ease-in-out infinite; }
       
       .glass-card {
         background: rgba(255, 255, 255, 0.9);
@@ -68,7 +53,7 @@
   </head>
   <body>
     <div id="root"></div>
-    <!-- تأكد من أن هذا الملف موجود في نفس المجلد الرئيسي -->
+    <!-- استخدام مسار نسبي بسيط يضمن الوصول للملف في GitHub Pages -->
     <script type="module" src="index.tsx"></script>
   </body>
 </html>
